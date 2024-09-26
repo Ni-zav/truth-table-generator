@@ -50,10 +50,10 @@ function generateTruthTable(statement) {
     symbolOutputDiv.innerHTML = '';
     truthTableOutputDiv.innerHTML = '';
 
-    // Normalize the statement to handle both symbols and words
+    // Normalize the statement to handle both symbols and words that changed to symbols
     statement = normalizeStatement(statement);
 
-    // Extract variables (A-Z)
+    // Extract variables (A-Za-z)
     const variables = [...new Set(statement.match(/[A-Za-z]/g))];
 
     if (variables.length === 0) {
