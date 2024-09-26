@@ -6,3 +6,6 @@ I faced some problem with the logical proposition class back then, and this proj
 Created with basic html, javascript, and some styling.
 
 demo: https://truth-table-generator.netlify.app/
+
+to-do:
+- [ ] responsive design on smaller devices
