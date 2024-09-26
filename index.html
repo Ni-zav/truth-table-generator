@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth Table Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Truth Table</h1>
+        <form id="truthTableForm">
+            <input type="text" id="statement" placeholder="Put the statement here...">
+            <button type="submit">Generate Truth Table</button>
+            <button type="button" id="refreshBtn">Refresh</button>
+        </form>
+        
+        <!-- Syntax Instructions Section -->
+        <div id="syntaxInstructions">
+            <h3>Supported Syntax:</h3>
+            <ul>
+                <li><strong>AND</strong>: <code>*</code> or <code>AND</code></li>
+                <li><strong>OR</strong>: <code>+</code> or <code>OR</code></li>
+                <li><strong>NOT</strong>: <code>'</code> or <code>NOT</code> (e.g., A' or NOT A)</li>
+                <li><strong>IMPLIES</strong>: <code>=</code> or <code>IMPLIES</code> (e.g., A = B or A IMPLIES B)</li>
+                <li><strong>NAND</strong>: <code>NAND</code></li>
+                <li><strong>NOR</strong>: <code>NOR</code></li>
+            </ul>
+        </div>
+
+        <div id="result" class="hidden">
+            <div id="symbolOutput"></div>
+            <div id="truthTableOutput"></div>
+            <button id="downloadBtn" >Download CSV</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer id="footer">
+    <p>&copy; 2024 Nizav. All rights reserved.</p>
+</footer>
+</html>
